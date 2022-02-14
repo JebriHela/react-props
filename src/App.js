@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import Dta from './Profile/Dta';
+import Button from './Profile/Button';
+import image from './imageP.png'
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     
+     <Dta fullName="Jebri Hela" bio="CV" profession="Ingenieure Full Stack" >
+      <img style={{
+               
+         marginLeft: "40%" ,
+        
+            }}  src ={image}/>
+      <Button name="Mohamed"/>
+      </Dta>
     </div>
   );
 }
